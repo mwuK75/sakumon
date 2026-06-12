@@ -1,0 +1,59 @@
+/* 全体の背景やフォントの設定（css-propertiesの知識） */
+body {
+    background-color: #f0f8ff; /* 薄い青色の背景 */
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 画面の中央にコンテンツを寄せる（css-layout, css-boxmodelの知識） */
+.container {
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 50px;
+}
+
+/* ボタンを並べるエリア */
+.menu-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* ボタン同士の間隔 */
+}
+
+/* ボタンの基本デザイン（css-boxmodel, css-propertiesの知識） */
+.btn {
+    display: inline-block;
+    width: 200px;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none; /* リンクの下線を消す */
+    color: white;
+    border-radius: 10px; /* 角を丸くする */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽い影をつける */
+}
+
+/* 登録ボタンの色（緑系） */
+.btn-register {
+    background-color: #2ec4b6;
+}
+
+/* 解くボタンの色（オレンジ系） */
+.btn-play {
+    background-color: #ff9f1c;
+}
+
+/* マウスが乗ったときの動き（css-pseudoの知識） */
+.btn:hover {
+    opacity: 0.8;
+}
