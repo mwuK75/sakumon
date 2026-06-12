@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>作問界隈 - クイズ大会</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>作問界隈 クイズ大会！</h1>
+
+        <div class="quiz-box">
+            <div id="quiz-info" class="quiz-info">第 1 問 （作った人: 〇〇 さん）</div>
+            
+            <div id="question-text" class="question-text">ここに問題が表示されます</div>
+
+            <div id="answer-box" class="answer-box" style="display: none;">
+                <span class="answer-label">こたえ：</span>
+                <span id="answer-text">ここに答えが表示されます</span>
+            </div>
+        </div>
+
+        <div class="control-box">
+            <button id="prev-btn" class="btn btn-nav">← 前の問題</button>
+            <button id="show-btn" class="btn btn-show">こたえを見る</button>
+            <button id="next-btn" class="btn btn-nav">次の問題 →</button>
+        </div>
+
+        <div class="navigation">
+            <a href="index.html" class="link-back">← ホームに戻る</a>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

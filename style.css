@@ -57,3 +57,126 @@ h1 {
 .btn:hover {
     opacity: 0.8;
 }
+
+/* --- ここから register.html 用のデザイン --- */
+
+/* フォーム全体を囲う白枠のボックス（css-boxmodelの知識） */
+.form-box {
+    background-color: white;
+    max-width: 500px;
+    margin: 0 auto 30px auto; /* 中央寄せ */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: left; /* 入力欄のラベルなどは左寄せ */
+}
+
+/* 各入力項目の上下の間隔 */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* 入力欄の上の文字（お名前、問題文など） */
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* 入力欄そのものの見た目 */
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* 横幅いっぱいに広げても枠線がはみ出さないようにする */
+}
+
+/* 登録ボタンの幅をいっぱいにする */
+#submit-btn {
+    width: 100%;
+    border: none;
+    cursor: pointer; /* マウスを乗せると指のマークになる */
+}
+
+/* 「ホームに戻る」リンクの見た目 */
+.navigation {
+    margin-top: 20px;
+}
+
+.link-back {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-back:hover {
+    text-decoration: underline;
+}
+/* --- ここから quiz.html 用のデザイン --- */
+
+/* クイズを表示する白いボックス */
+.quiz-box {
+    background-color: white;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.quiz-info {
+    font-size: 1.1rem;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.question-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    min-height: 80px; /* 問題文が短くても高さがズレないように固定 */
+}
+
+/* 答えを表示するエリアの見た目 */
+.answer-box {
+    background-color: #ffe3e3;
+    border: 2px dashed #ff4a4a;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff4a4a;
+}
+
+/* 操作ボタンを並べるエリア */
+.control-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+/* 前へ・次へボタンの見た目 */
+.btn-nav {
+    background-color: #6c757d;
+    width: 140px;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* 答えを見るボタンの見た目 */
+.btn-show {
+    background-color: #e63946;
+    width: 180px;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+}
